@@ -1,6 +1,17 @@
 #include<iostream>
+
 using namespace std;
 
-public void main() {
-cout<<"hello bitch!";
+void incr(int * P);
+
+int main() {
+	int value = 5;
+	int * pointer = &value;
+	incr(pointer);
+	cout << *pointer;
+	
+}
+
+void incr(int * P) {
+	*P+=2;
 }
